@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:id="@+id/img_deny_images"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/cross"/>
+
+            <ImageView
+                android:id="@+id/img_given_images"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/checkmark"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Read Media Images"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:id="@+id/img_deny_video"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/cross"/>
+
+            <ImageView
+                android:id="@+id/img_given_video"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/checkmark"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Read Media Video"
+                android:singleLine="true"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="22sp"
+                android:layout_weight="1"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:id="@+id/img_deny_audio"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/cross" />
+
+            <ImageView
+                android:id="@+id/img_given_audio"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/checkmark"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Read Media Audio"
+                android:textSize="22sp"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_check_all_permission"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Check All Permission"
+            android:textSize="20dp"
+            android:layout_marginTop="60dp"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
